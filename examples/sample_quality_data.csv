@@ -1,0 +1,7 @@
+date,product,indicator,value,unit,remarks
+2026-06-01,GC100,thickness_avg,100.8,um,synthetic sample
+2026-06-01,GC100,l_value,31.2,-,synthetic sample
+2026-06-01,GC100,delta_e,1.8,-,synthetic sample
+2026-06-02,GC150,thickness_avg,149.6,um,synthetic sample
+2026-06-02,GC150,l_value,30.5,-,synthetic sample
+2026-06-02,GC150,delta_e,2.1,-,synthetic sample

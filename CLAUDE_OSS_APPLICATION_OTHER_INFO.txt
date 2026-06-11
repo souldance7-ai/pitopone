@@ -1,0 +1,21 @@
+Hi Claude Team,
+
+I am applying for the Claude for Open Source Program as the maintainer of PI Film Industrialization Toolkit, an open-source project focused on specialized industrial engineering workflows, particularly around polyimide film manufacturing, production data organization, quality analysis, technical reporting, and AI-assisted engineering documentation.
+
+My background is not from a typical software-only environment. I work directly in PI film industrialization, where engineering knowledge is highly specialized, fragmented, and often locked inside internal documents, production experience, spreadsheets, trial records, and one-time reports. In this field, many practical problems are not well covered by mainstream open-source software, even though engineers repeatedly need tools for production data analysis, product-level statistics, process comparison, report generation, quality tracking, and structured technical documentation.
+
+Although this repository may not strictly meet the 5,000-star threshold, I believe it fits the spirit of the “ecosystem quietly depends on” consideration. The value of this project is not measured only by public popularity metrics. It is designed for a niche but important professional community: engineers, technical managers, and manufacturing teams who need reliable, transparent, and reusable tools to convert complex production information into practical engineering outputs.
+
+The project aims to make specialized industrial knowledge more accessible through open-source workflows. It helps bridge the gap between real manufacturing practice and modern AI-assisted engineering work, especially for Chinese-speaking industrial users who often face limited access to structured open technical resources in this domain. Instead of keeping process knowledge scattered across private notes, screenshots, Excel files, and one-time reports, the project organizes reusable methods, scripts, templates, and documentation patterns that can support long-term engineering improvement.
+
+Recent and ongoing maintenance work includes improving automation scripts, refining technical report templates, organizing process data structures, cleaning up legacy logic, improving multilingual documentation, and making the tools easier for non-software engineers to understand and use. I continue to maintain and update the project so it can better support real industrial use cases rather than remain a one-off personal tool.
+
+Access to Claude Max would be extremely valuable for maintaining and improving this project. I would use it to review and refactor code, improve documentation quality, generate test cases, analyze edge cases, translate complex engineering logic into clearer open-source documentation, and help turn specialized manufacturing experience into reusable tools that more engineers can benefit from.
+
+This project may not look large from the outside, but it addresses a real gap in the open-source ecosystem: practical tooling for specialized manufacturing and PI film industrialization workflows. I believe Claude would directly help sustain and improve this work, making the project more reliable, better documented, and more useful for a focused professional community that quietly depends on such tools.
+
+Thank you very much for reviewing my application. I sincerely appreciate your consideration.
+
+Best regards,
+Zach Peng / Peng TsungCheng
+GitHub: @souldance7-ai
