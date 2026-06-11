@@ -1,124 +1,132 @@
 # PI Film Industrialization Toolkit
 
-**PI Film Industrialization Toolkit** is an open-source engineering toolkit for organizing production data, quality records, process trial information, and technical reports in specialized polyimide (PI) film manufacturing workflows.
+> 面向 PI 膜、聚合物薄膜与制造业工程场景的开源工程工具包。  
+> 用于生产数据统计、产品别分析、A/B/C 等级占比、质量跟踪、制程验证报告、周报模板、技术文章沉淀与 AI 辅助工程文档化。
 
-This project is built for practical industrial engineering work, especially where manufacturing knowledge is often scattered across spreadsheets, screenshots, trial notes, shift records, and one-time reports.
+**PI Film Industrialization Toolkit** 是一个把制造现场零散资料转成结构化工程输出的开源项目。  
+它不公开任何公司机密、客户资料、真实配方、专有参数或内部工艺窗口，只提供通用化、脱敏化、模板化、可复用的方法。
 
-The goal is to provide reusable, transparent, and maintainable workflows for engineers who need to convert complex production information into structured engineering outputs.
+---
 
-## What this project does
+## 项目定位
 
-This toolkit currently focuses on:
+在 PI 膜产业化、聚合物薄膜制造、石墨导热膜基材、电子级薄膜、TPI/MPI/复合膜等专业领域，很多工程知识并不天然存在于开源世界中。
 
-- daily production output summaries;
-- product-level production statistics;
-- A/B/C grade weight ratio calculation;
-- A1 + A2 grouping for A-grade yield analysis;
-- synthetic sample data for non-confidential demonstrations;
-- Markdown and LaTeX report templates;
-- reusable documentation patterns for process trial reports;
-- weekly engineering report templates;
-- basic Python utilities for manufacturing data analysis.
+实际现场资料通常分散在：
 
-## Why this project matters
+- Excel 生产记录；
+- 截图与聊天记录；
+- 试验记录；
+- 质量异常表；
+- 周报与会议纪要；
+- 技术报告；
+- 个人经验判断。
 
-Specialized industrial manufacturing domains often have practical engineering needs that are not well represented in mainstream open-source software.
+本项目希望把这些内容整理成可复用的开源结构，包括：
 
-In PI film industrialization and polymer film manufacturing, engineers repeatedly need to:
+- 数据字段标准；
+- 统计脚本；
+- 报告模板；
+- 质量分析方法；
+- 制程验证记录格式；
+- 技术文章框架；
+- AI 辅助工程文档化流程。
 
-1. normalize production data;
-2. summarize product-level output;
-3. calculate grade distribution;
-4. compare process trials;
-5. prepare technical reports;
-6. preserve engineering know-how in a structured and reusable form.
+---
 
-This project attempts to bridge real manufacturing practice and modern AI-assisted engineering documentation.
+## 当前内容模块
 
-## Non-confidential principle
+| 模块 | 内容 |
+|---|---|
+| `docs/zh_CN/` | 中文项目说明、开源边界、路线图 |
+| `docs/articles/` | PI 膜产业化、质量统计、制程验证、石墨导热膜、TPI/MPI 应用等技术文章 |
+| `docs/applications/` | 应用场景拆解，如 FPC/FCCL、先进封装、石墨导热膜等 |
+| `templates/zh_CN/` | 中文周报、制程验证报告、质量统计报告模板 |
+| `examples/zh_CN/` | 中文合成样例数据 |
+| `scripts/` | 数据检查、统计与报告生成脚本 |
 
-This repository **does not include**:
+---
 
-- proprietary production recipes;
-- customer data;
-- company-specific production parameters;
-- confidential process windows;
-- private equipment settings;
-- internal commercial information.
+## 适用对象
 
-All examples are anonymized, generalized, or fully synthetic. The repository is intended to provide reusable workflow structures rather than disclose any proprietary manufacturing know-how.
+- PI 膜制程工程师；
+- 聚合物薄膜制造工程师；
+- 品质工程师；
+- 技术管理人员；
+- 工艺试验与产业化导入人员；
+- 需要把工程经验转成结构化报告的制造业团队；
+- 需要用 AI 辅助整理工程资料的开源使用者。
 
-## Repository structure
+---
 
-```text
-docs/       General engineering workflow documentation
-templates/  Markdown and LaTeX report templates
-scripts/    Python utilities for production and quality data analysis
-examples/   Synthetic datasets and generated sample outputs
-reports/    Example report output folder
-.github/    Issue templates for open-source collaboration
-```
+## 非机密原则
 
-## Quick start
+本项目不包含：
 
-Install dependencies:
+- 公司真实配方；
+- 客户资料；
+- 内部生产数据；
+- 专有设备参数；
+- 真实制程窗口；
+- 商业合同信息；
+- 未公开技术文件。
+
+所有样例均为合成数据或通用化表达，仅用于开源方法展示。
+
+---
+
+## 快速开始
+
+安装依赖：
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run sample production summary:
+运行生产统计：
 
 ```bash
 python scripts/production_summary.py
 ```
 
-Run product grade statistics:
+运行等级占比统计：
 
 ```bash
 python scripts/product_grade_statistics.py
 ```
 
-Run A-grade yield analysis:
+检查 CSV 数据字段完整性：
 
 ```bash
-python scripts/yield_analysis.py
+python scripts/csv_schema_checker.py
 ```
 
-Generate a Markdown report:
+---
 
-```bash
-python scripts/report_table_generator.py
-```
+## 推荐阅读顺序
 
-## Example data format
+1. [`docs/zh_CN/project_positioning_zh.md`](docs/zh_CN/project_positioning_zh.md)
+2. [`docs/zh_CN/open_source_boundary_zh.md`](docs/zh_CN/open_source_boundary_zh.md)
+3. [`docs/articles/01_pi_film_industrialization_overview_zh.md`](docs/articles/01_pi_film_industrialization_overview_zh.md)
+4. [`docs/articles/02_from_production_data_to_engineering_report_zh.md`](docs/articles/02_from_production_data_to_engineering_report_zh.md)
+5. [`docs/articles/03_quality_grade_statistics_method_zh.md`](docs/articles/03_quality_grade_statistics_method_zh.md)
+6. [`docs/articles/04_process_trial_documentation_zh.md`](docs/articles/04_process_trial_documentation_zh.md)
+7. [`docs/applications/application_map_zh.md`](docs/applications/application_map_zh.md)
 
-```csv
-date,product,thickness_um,grade,weight_kg,remarks
-2026-06-01,GC100,100,A1,125.5,synthetic sample
-2026-06-01,GC100,100,B,18.2,synthetic sample
-```
-
-## Intended users
-
-This project may be useful for:
-
-- PI film process engineers;
-- polymer film manufacturing teams;
-- industrial engineering managers;
-- quality engineers;
-- technical documentation maintainers;
-- manufacturing teams adopting AI-assisted reporting workflows.
+---
 
 ## Roadmap
 
-- Add Excel-ready export utilities.
-- Add automated chart generation.
-- Add more synthetic process trial examples.
-- Add bilingual Chinese/English engineering templates.
-- Add validation utilities for production data quality.
-- Add optional LaTeX PDF report generation workflow.
+- 增加 Excel 美化输出；
+- 增加自动图表生成；
+- 增加中英文双语技术报告模板；
+- 增加更多合成制程验证案例；
+- 增加面向质量异常的分析模板；
+- 增加 LaTeX PDF 自动生成流程；
+- 增加 AI 辅助技术文章整理工作流。
+
+---
 
 ## License
 
-This project is released under the MIT License.
+MIT License
